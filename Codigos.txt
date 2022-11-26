@@ -1,4 +1,5 @@
 Iniciar Entorno FastApi = uvicorn main:app --reload
+Iniciar Migraciones = alembic init migrations
 Preparar Migraciones a la base de datos =  alembic revision --autogenerate -m "Agregando pais a usuarios"
 Cargar Migracion a la base de datos = alembic upgrade heads
 
