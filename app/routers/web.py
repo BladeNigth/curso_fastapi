@@ -9,7 +9,7 @@ import aiohttp
 router = APIRouter(include_in_schema=False)
 templates = Jinja2Templates(directory="app/templates")
 
-url = "https://fastapi-curso-udemy.herokuapp.com/"
+url = "https://fastapi-curso-udemy.herokuapp.com"
 
 
 def get_current_user(request: Request):

@@ -19,6 +19,8 @@ bcrypt
 
 python-jose[crytography]
 
+crytography
+
 python-multipart
 
 pytest
