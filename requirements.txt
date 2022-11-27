@@ -19,7 +19,7 @@ bcrypt
 
 python-jose[crytography]
 
-crytography
+cryptography
 
 python-multipart
 
