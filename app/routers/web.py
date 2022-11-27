@@ -7,7 +7,7 @@ import aiohttp
 router = APIRouter()
 templates = Jinja2Templates(directory="app/templates")
 
-url = "http://localhost:8000"
+url = "https://fastapi-curso-udemy.herokuapp.com/"
 
 
 @router.get("/")
