@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    {% if msj|length> 1%}
+        <div class="alert alert-{{type_alert}} alert-dismissible fade show" role="alert">
+            <strong>{{msj}}</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+</div>
+    {% endif %}
+    <h1 class="text-center"> Crear Usuario </h1>
+    <form method="POST">
+        <div class="mb-3">
+            <label class="form-label"> Nombre usuario</label>
+            <input type="text" class="form-control" name="username" placeholder="username" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Password </label>
+            <input type="text" class="form-control" name="password" placeholder="password" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Nombre</label>
+            <input type="text" class="form-control" name="nombre" placeholder="nombre" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Apellido </label>
+            <input type="text" class="form-control" name="apellido" placeholder="apellido" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Direccion </label>
+            <input type="text" class="form-control" name="direccion" placeholder="direccion" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Telefono </label>
+            <input type="number" class="form-control" name="telefono" placeholder="telefono" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">  Correo </label>
+            <input type="email" class="form-control" name="correo" placeholder="correo" required>
+        </div>
+
+        <button type="submit" class="btn-primary"> Crear Usuario </button>
+    </form>
+</div>
+{% endblock %}
