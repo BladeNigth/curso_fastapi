@@ -32,3 +32,5 @@ Jinja2
 requests
 
 aiohttp
+
+starlette==0.22.0
